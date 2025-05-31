@@ -1,11 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bendras</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    ??????????
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo_white.png" alt="logo">
+                </a>
+            </div>
+            <a href="index.html"></a>
+            <div class="navigation">
+                <ul>
+                    <li> <a href="index.html">Pradžia</a> </li>
+                    <li> <a href="#projects">Mano projektai</a> </li>
+                    <li> <a href="#contacts">Kontaktai</a> </li>
+                    <li>
+                        <a class="button button-lc" href="#">
+                            <i class="fas fa-user"></i>
+                            Prisijungti
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="start">
+        <div class="container">
+            <div class="start-content">
+                <h1 class="start-heading text-xxl">
+                    Gervės žemėlapiai
+                </h1>
+                <p class="start-text">
+                    "Gervės žemėlapiai" yra mano
+                    žemėlapių projektų rinkinys,
+                    kurį pradėjau daryti nuo 2025 metų.
+                </p>
+                <div class="start-button">
+                    <a href="#projects" class="button">Keliaujam pasižvalgyti</a>
+                </div>
+            </div>
+            <div class="start-img">
+                <img src="img/lietuva-gerve.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section class="projects background-bc" id="projects">
+        <div class="container">
+            <h2 class="projects-heading text-xl">
+                Mano projektai
+            </h2>
+            <div class="projects-grid">
+                <div class="panel">
+                    <a href="3_praktinis/index.html">
+                        <img src="img/gerves.jpg" alt="Gervės">
+                        <h3 class="text-l">Pastebėjai gervę?</h3>
+                    </a>
+                    <p>Žymėk ją žemėlapyje ir jos skrydžio trajektoriją!</p>
+                    <p></p>
+                </div>
+                <div class="panel">
+                    <a href="1_praktinis/map_1.html">
+                        <img src="img/klaipedos_uostas.jpg" alt="Klaipėdos uostas">
+                        <h3 class="text-l">Klaipėdos uoste atvykę laivai</h3>
+                    </a>
+                    <p>Į Klaipėdos uostą atplaukiantys arba iš jo išplaukiantys tarptautiniai laivai.</p>
+                    <p>Šaltinis:
+                        <a href="https://vda.lrv.lt/lt/">Valstybės duomenų agentūra</a>
+                    </p>
+                </div>
+                <div class="panel">
+                    <a href="2_praktinis/index.html">
+                        <img src="img/vilniaus_keliai.png" alt="Vilniaus eismo įvykiai ir kelių žemėlapis">
+                        <h3 class="text-l">Vilniaus eismo įvykiai</h3>
+                    </a>
+                    <p>Vilniaus miesto savivaldybėje įvykusių eismo įvykių statistika atvaizduota žemėlapiu.</p>
+                    <p>Šaltinis:
+                        <a href="https://policija.lrv.lt/">Policijos departamentas prie Vidaus reikalų ministerijos </a>
+                    </p>
+                </div>
+                <div class="panel">
+                    <a href="1_praktinis/map_3.html">
+                        <img src="img/mobilus_internetas.png" alt="Mobilaus interneto želėlapis">
+                        <h3 class="text-l">Mobilaus interneto greitis keliuose</h3>
+                    </a>
+                    <p>Tiekėjų (Bitė, Tele2 ir Telia) mobilaus interneto greičiai Lietuvos keliuose; 2019-2020 metų
+                        matavimai.</p>
+                    <p>Šaltinis:
+                        <a href="https://www.rrt.lt/">Lietuvos Respublikos ryšių reguliavimo tarnyba</a>
+                    </p>
+                </div>
+                <div class="panel">
+                    <a href="1_praktinis/map_2.html">
+                        <img src="img/traukinys.webp" alt="Siauruko lokomotyvas Joniškėlyje">
+                        <h3 class="text-l">Geležinkelio triukšmas</h3>
+                    </a>
+                    <p>Vizualizacija kiek geležinkelio sukeliamas triukšmas paveikia aplinkinius gyventojus;
+                        Kaišiadorių ir Lentvario pavyzdys. </p>
+                    <p>Šaltinis:
+                        <a href="https://nvsc.lrv.lt/">Nacionalinis visuomenės sveikatos centras prie Sveikatos apsaugos
+                            ministerijos</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer background-dc" id="contacts">
+        <div class="container">
+
+
+            <div class="footer-grid">
+                <a href="index.html">
+                    <img src="img/logo_black.png" alt="logo">
+                </a>
+                <div class="panel">
+                    <h4>Parašykite atsiliepimą!</h4>
+                    <p class="text-sm">
+                        Čia man galite parašyti užklausą, skundą ar netgi pagyrimą.
+                    </p>
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdFe7r0cu6Zc6w002J0FnQIBVOsC6Msme49cZvqq6NltE6alw/viewform?usp=dialog">
+                        <button type="comment" class="button button-dc">
+                            Rašyti atsiliepimą
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <h4>Menu</h4>
+                    <ul>
+                        <li> <a href="index.html">Pradžia</a> </li>
+                        <li> <a href="#projects">Mano projektai</a> </li>
+                        <li> <a href="#contacts">Kontaktai</a> </li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h4>Kontaktai</h4>
+                    <p>Martynas Pedzevičius</p>
+                    <p>martynas.pedzevicius@chgf.stud.vu.lt</p>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
