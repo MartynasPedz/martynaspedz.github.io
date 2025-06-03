@@ -42,6 +42,10 @@ img {
     align-items: center;
 }
 
+.logo-m img {
+    height: 60px;
+}
+
 .navbar .navigation ul {
     display: flex;
 }
@@ -156,16 +160,35 @@ img {
     align-items: center;
 }
 
-/* Comment */
+/* Frame */
 
-.comment {
-    height: calc(100vh-50px);
+body.no-scroll {
+    overflow: hidden;
 }
 
-.comment iframe {
+body.map {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.frame-container {
+    height: calc(100vh - 105px);
+}
+
+iframe {
     width: 100%;
     height: 100%;
-    border: none;
+}
+
+/* error */
+.error {
+    padding-top: 100px;
+    height: 1000px;
+}
+
+.error-button {
+    padding-top: 25px;
 }
 
 /* Utility classes */
