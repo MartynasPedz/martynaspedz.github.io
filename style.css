@@ -42,8 +42,14 @@ img {
     align-items: center;
 }
 
+.logo img {
+    height: 120px;
+    width: 120px;
+}
+
 .logo-m img {
     height: 60px;
+    width: 60px;
 }
 
 .navbar .navigation ul {
@@ -294,4 +300,69 @@ iframe {
     color: #000;
     border-radius: 10px;
     padding: 20px;
+}
+
+/*Hamburger Button */
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+}
+
+/* Mobile Navigation */
+.hamburger-navigation {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+.hamburger-navigation.active {
+    right: 0;
+}
+
+.hamburger-navigation ul {
+    margin-top: 120px;
+    padding-right: 10px;
+}
+
+.hamburger-navigation ul li {
+    margin: 5px 0;
+    text-align: right;
+}
+
+.hamburger-navigation ul li:nth-child(4) {
+    margin: 15px;
+    text-align: center;
+}
+
+.hamburger-navigation ul li a {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+/* Media Queries */
+@media (max-width: 760px) {
+    .navbar .navigation {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+        display: block;
+    }
 }
