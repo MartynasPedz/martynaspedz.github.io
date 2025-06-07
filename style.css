@@ -118,6 +118,7 @@ img {
 
 .projects .panel h3 {
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .projects .panel p:last-child {
@@ -358,11 +359,56 @@ iframe {
 
 /* Media Queries */
 @media (max-width: 760px) {
+
+    /* Navbar */
     .navbar .navigation {
         display: none;
     }
 
     .navbar .hamburger-button {
         display: block;
+    }
+
+    /* Start*/
+    .start .container {
+        display: block;
+    }
+
+    .start .start-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .start .start-text {
+        width: 100%;
+    }
+
+    .start .start-button {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .logo {
+        text-align: center;
+    }
+
+    .footer .menu,
+    .footer .contacts {
+        text-align: center;
+    }
+
+    /* Error */
+    .error .container {
+        text-align: center;
     }
 }
